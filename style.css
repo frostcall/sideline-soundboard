@@ -85,6 +85,30 @@ ol.steps strong { display:block; }
 
 .note { border-left:3px solid var(--accent); padding:2px 12px; color:var(--muted); }
 
+/* Status and tier labels */
+.pill { display:inline-block; vertical-align:middle; font-size:.72rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase; line-height:1; padding:4px 8px; border-radius:999px; margin-left:6px; white-space:nowrap; }
+.pill.testing { color:#7a4a00; background:#fff1d6; border:1px solid #e9c77f; }
+.pill.pro { color:var(--accent); background:var(--surface); border:1px solid var(--line); }
+@media (prefers-color-scheme: dark) { .pill.testing { color:#ffd48a; background:#3a2a0c; border-color:#6b4d16; } }
+h2 .pill, h3 .pill { position:relative; top:-2px; }
+
+/* Also-in-the-app list */
+ul.also { padding-left:1.2em; margin:8px 0 0; }
+ul.also li { margin:6px 0; }
+
+/* Free vs Pro table */
+.tiers { width:100%; border-collapse:collapse; margin-top:16px; font-size:.94rem; }
+.tiers caption { text-align:left; color:var(--muted); font-size:.88rem; padding-bottom:8px; }
+.tiers th, .tiers td { padding:9px 8px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+.tiers thead th { font-size:.85rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); border-bottom:2px solid var(--line); }
+.tiers td.t, .tiers th.t { text-align:center; width:84px; }
+.tiers tbody th[colspan] { font-size:.9rem; color:var(--fg); background:var(--surface); padding-top:10px; }
+.tiers tbody th[scope="row"] { font-weight:400; }
+.tiers .yes { color:var(--accent); font-weight:700; }
+.tiers .no { color:var(--muted); }
+.tiers .pill { margin-left:4px; }
+@media (max-width:480px) { .tiers { font-size:.88rem; } .tiers td.t, .tiers th.t { width:64px; padding-left:4px; padding-right:4px; } .tiers th, .tiers td { padding-left:4px; padding-right:4px; } }
+
 /* Footer */
 .site-footer { padding-top:20px; padding-bottom:40px; border-top:1px solid var(--line); font-size:.9rem; color:var(--muted); }
 .site-footer p { margin:0 0 6px; }
