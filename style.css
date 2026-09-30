@@ -6,3 +6,9 @@ main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
 h1 { font-size: 1.8rem; margin: 0 0 4px; } h2 { font-size: 1.2rem; margin-top: 32px; }
 .muted { color: var(--muted); } a { color: var(--accent); }
 nav a { margin-right: 16px; }
+img.shot { display:block; max-width:100%; height:auto; border-radius:12px; margin:12px 0 4px; border:1px solid rgba(128,128,128,.3); }
+figure { margin:16px 0; } figcaption { color:var(--muted); font-size:.9rem; }
+.shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; align-items:start; }
+.cta { display:inline-block; background:var(--accent); color:var(--bg); padding:12px 20px; border-radius:999px; font-weight:600; text-decoration:none; margin:8px 0; }
+ol.steps { padding-left:1.2em; } ol.steps li { margin:10px 0; }
+.note { border-left:3px solid var(--accent); padding:2px 12px; color:var(--muted); }
